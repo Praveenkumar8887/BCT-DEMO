@@ -1,0 +1,12 @@
+{"properties": [
+  {
+    "name": "appconfig.enablecache",
+    "type": "java.lang.String",
+    "description": "A description for 'appconfig.enablecache'"
+  },
+  {
+    "name": "rediscache",
+    "type": "java.lang.String",
+    "description": "A description for 'rediscache'"
+  }
+]}

@@ -1,0 +1,60 @@
+
+SQL*Loader: Release 19.0.0.0.0 - Production on Fri Sep 23 10:39:04 2022
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   C:/Projects/HongKong_BCT/POC_SpringBoot/SQLLoaderFiles/Customers.ctl
+Data File:      C://Projects//HongKong_BCT//POC_SpringBoot//SQLLoaderFiles//IN//Customers.csv
+  Bad File:     C:/Projects/HongKong_BCT/POC_SpringBoot/SQLLoaderFiles/Customers.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Bind array:     250 rows, maximum of 1048576 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table CUSTOMER, loaded from every logical record.
+Insert option in effect for this table: INSERT
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+CUSTOMER_ID                         FIRST     *   ,  O(") CHARACTER            
+PASSWORD                             NEXT     *   ,  O(") CHARACTER            
+FIRST_NAME                           NEXT     *   ,  O(") CHARACTER            
+LAST_NAME                            NEXT     *   ,  O(") CHARACTER            
+GENDER                               NEXT     *   ,  O(") CHARACTER            
+ENABLED                              NEXT     *   ,  O(") CHARACTER            
+ACCOUNT_NON_EXPIRED                  NEXT     *   ,  O(") CHARACTER            
+CREDENTIALS_NON_EXPIRED              NEXT     *   ,  O(") CHARACTER            
+ACCOUNT_NON_LOCKED                   NEXT     *   ,  O(") CHARACTER            
+
+Record 1: Rejected - Error on table CUSTOMER, column GENDER.
+ORA-12899: value too large for column "PRAVEEN"."CUSTOMER"."GENDER" (actual: 6, maximum: 1)
+
+
+Table CUSTOMER:
+  3 Rows successfully loaded.
+  1 Row not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                 580500 bytes(250 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:             4
+Total logical records rejected:         1
+Total logical records discarded:        0
+
+Run began on Fri Sep 23 10:39:04 2022
+Run ended on Fri Sep 23 10:39:06 2022
+
+Elapsed time was:     00:00:01.48
+CPU time was:         00:00:00.88
